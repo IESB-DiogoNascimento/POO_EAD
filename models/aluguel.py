@@ -26,3 +26,16 @@ class Aluguel:
     
     def get_fim(self):
         return self.__fim
+
+    def __str__(self):
+        return \
+f'''
+Data Inicio: {self.get_inicio().strftime('%d/%m/%Y')}
+Data Fim: {self.get_fim().strftime('%d/%m/%Y')}
+
+Carro Alugado:
+{self.get_carro()}
+
+Cliente:
+{self.get_cliente()}
+'''

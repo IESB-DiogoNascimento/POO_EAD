@@ -15,3 +15,6 @@ class Cliente:
         for atributo, valor in kwargs.items():
             setattr(novo_cliente, atributo, valor)
         return novo_cliente
+    
+    def __str__(self):
+        return '\n'.join([f'{attr}: {value}' for attr, value in self.__dict__.items()])
