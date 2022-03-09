@@ -92,6 +92,8 @@ class ViewPrincipal:
             print('\nCliente não cadastrado.')
         elif error == 3:
             print('\nData em formato inválido, por favor utilize o formato dd/mm/yyyy.')
+        elif error == 4:
+            print('\nVeículo Indisponível para a data solicitada.')
         input('Pressione enter para continuar.')
         
     def relatorio_de_locacao(self, controlador):
